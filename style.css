@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0077cc, #00cc88);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* Navigation */
+nav {
+  position: sticky;   /* sticks when scrolling */
+  top: 0px;             /* distance from top */
+  background: #eee;
+  padding: 10px;
+  z-index: 100;      /* stays above other content */
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #eee;
+  padding: 0.5rem;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #0077cc;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(26, 26, 27, 0.1);
+  text-align: center;
+  padding: 15px;
+  max-width: 380px;
+  margin: 20px auto;
+  position: relative;
+}
+.card img {
+  width: 200px;
+  border-radius: 5%;
+  margin-bottom: 5px;
+}
+
+/* Sections */
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 30px;
+}
+h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Skills */
+.skill {
+  margin-bottom: 15px;
+}
+/* Skills Container */
+.skills-container {
+  max-width: 500px;   /* keeps it neat */
+  margin: 0 auto;     /* centers horizontally */
+  text-align: left;   /* keeps text aligned left inside */
+}
+.bar {
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.fill {
+  background: #0077cc;
+  height: 10px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+input, textarea, button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #005fa3;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+footer a {
+  color: #00cc88;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card img {
+    width: 100px;
+  }
+  header h1, .hero h1 {
+    font-size: 1.5rem;
+  }
+}
